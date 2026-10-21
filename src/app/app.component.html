@@ -1,0 +1,21 @@
+<div class="caja">
+  <h2>CONTROL DE VIVIENDA</h2>
+
+  <button (click)="cambiarCorrienteGeneral()">
+    {{ corrienteGeneral ? 'Desconectar' : 'Conectar' }} corriente vivienda
+  </button>
+  <p>Corriente General: {{ corrienteGeneral ? 'CONECTADA' : 'DESCONECTADA' }}</p>
+
+  <button (click)="cambiarCorrienteHabitacion()">
+    {{ corrienteHabitacion ? 'Desconectar' : 'Conectar' }} corriente Hab #1
+  </button>
+  <p>Estado recibido: PERSIANA {{ estadoPersiana }}</p>
+
+  <p><i>AppComponent</i></p>
+
+  <app-habitacion
+    [id]="1"
+    [corriente]="corrienteGeneral && corrienteHabitacion"
+    (estadoPersiana)="recibirEstado($event)">
+  </app-habitacion>
+</div>

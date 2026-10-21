@@ -1,0 +1,7 @@
+<div class="caja">
+  <h4>PERSIANA</h4>
+  <p>Persiana id.: #{{ id() }}</p>
+  <p>Estado: {{ estado }}</p>
+  <button [disabled]="!corriente()" (click)="subirBajar()">Subir / bajar</button>
+  <p><i>PersianaComponent</i></p>
+</div>
