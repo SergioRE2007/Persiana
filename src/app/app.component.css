@@ -1,11 +1,9 @@
-:host {
-  display: block;
-  font-family: Arial, sans-serif;
-  padding: 20px;
+.caja {
+  max-width: 500px;
+  margin: 30px auto;
 }
 
-.caja {
-  border: 1px solid black;
-  padding: 10px;
-  width: 450px;
+h1 {
+  text-align: center;
+  color: #1565c0;
 }
